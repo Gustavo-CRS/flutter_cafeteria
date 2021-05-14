@@ -5,9 +5,15 @@ class CoffeeModel {
   final String descricao;
   final String preco;
   final String imagem;
+  final String tempoPreparacao;
+  final String ingredientes;
+  final Map informacoesNutricionais;
 
   CoffeeModel(
-      {required this.nome,
+      {required this.tempoPreparacao,
+      required this.ingredientes,
+      required this.informacoesNutricionais,
+      required this.nome,
       required this.descricao,
       required this.preco,
       required this.imagem});
@@ -27,6 +33,9 @@ class CoffeeModel {
       descricao: map['descricao'],
       preco: map['preco'],
       imagem: map['imagem'],
+      informacoesNutricionais: map['informacoesNutricionais'],
+      ingredientes: map['Ingredientes'],
+      tempoPreparacao: map['tempoPreparacao'],
     );
   }
 

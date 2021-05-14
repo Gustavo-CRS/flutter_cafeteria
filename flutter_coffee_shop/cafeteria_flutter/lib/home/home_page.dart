@@ -90,8 +90,8 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     HomePageImageWidget(imagem: "assets/coffee.jpg"),
-                    HomePageImageWidget(imagem: "assets/coffee.jpg"),
-                    HomePageImageWidget(imagem: "assets/coffee.jpg"),
+                    HomePageImageWidget(imagem: "assets/coffee2.jpg"),
+                    HomePageImageWidget(imagem: "assets/coffee3.jpg"),
                   ],
                 ),
               ],

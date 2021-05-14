@@ -7,15 +7,18 @@ class HomePageImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-      ),
-      width: 180,
-      child: Image(
-        image: AssetImage(imagem),
-        fit: BoxFit.fill,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: ExactAssetImage(imagem),
+            fit: BoxFit.fill,
+          ),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        width: 180,
       ),
     );
   }

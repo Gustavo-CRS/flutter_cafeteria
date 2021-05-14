@@ -25,9 +25,9 @@ class AppBarWidget extends PreferredSize {
                               fontSize: 26.0, color: Color(0xFF473D3A)),
                           children: [
                             TextSpan(
-                              text: "Darth broxinha",
+                              text: "Guerreiro Broxinha",
                               style: TextStyle(
-                                  fontSize: 26.0,
+                                  fontSize: 24.0,
                                   fontWeight: FontWeight.bold,
                                   color: Color(0xFF473D3A)),
                             )
