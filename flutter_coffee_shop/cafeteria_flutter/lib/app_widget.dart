@@ -1,3 +1,4 @@
+import 'package:cafeteria_flutter/details/details_page.dart';
 import 'package:flutter/material.dart';
 import 'home/home_page.dart';
 
