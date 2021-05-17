@@ -3,7 +3,7 @@ import 'dart:convert';
 class CoffeeModel {
   final String nome;
   final String descricao;
-  final String preco;
+  final double preco;
   final String imagem;
 
   CoffeeModel(
@@ -29,9 +29,4 @@ class CoffeeModel {
       imagem: map['imagem'],
     );
   }
-
-  String toJson() => json.encode(toMap());
-
-  factory CoffeeModel.fromJson(String source) =>
-      CoffeeModel.fromMap(json.decode(source));
 }

@@ -22,7 +22,9 @@ class AppBarWidget extends PreferredSize {
                       Text.rich(TextSpan(
                           text: "Olá, ",
                           style: TextStyle(
-                              fontSize: 26.0, color: Color(0xFF473D3A)),
+                            fontSize: 26.0,
+                            color: Color(0xFF473D3A),
+                          ),
                           children: [
                             TextSpan(
                               text: "Guerreiro Broxinha",

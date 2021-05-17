@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final controller = HomeController();
+  final HomeController cafeController = HomeController();
 
   @override
   Widget build(BuildContext context) {
@@ -43,20 +43,17 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             height: 324,
-            child: FutureBuilder(
-              future: controller.getCafe(),
-              builder: (context, snapshot) => ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return CardCoffeeWidget(
-                    nome: controller.coffee.cafeList[index].nome,
-                    descricao: controller.coffee.cafeList[index].descricao,
-                    preco: controller.coffee.cafeList[index].preco,
-                    imagem: controller.coffee.cafeList[index].imagem,
-                  );
-                },
-                itemCount: controller.coffee.cafeList.length,
-              ),
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return CardCoffeeWidget(
+                  descricao: cafeController.lista[index].descricao,
+                  imagem: cafeController.lista[index].imagem,
+                  nome: cafeController.lista[index].nome,
+                  preco: cafeController.lista[index].preco,
+                );
+              },
+              itemCount: cafeController.lista.length,
             ),
           ),
           SizedBox(
